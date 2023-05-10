@@ -1,0 +1,60 @@
+@use "../../../scss/variables" as *;
+
+.dayWrapper {
+  position: relative;
+  color: $clr-grey--40;
+
+  .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin: 0;
+
+    &:hover {
+      border: 1px solid $clr-grey--30;
+    }
+
+    &.selectable {
+      color: $clr-black--10;
+    }
+
+    &.currentDay {
+      color: $caret;
+    }
+
+    &.weekend {
+      background-color: $clr-bg-neg;
+    }
+
+    &.selectedDay {
+      background: $linear-gradient;
+      color: $clr-white;
+    }
+  }
+
+  .dayWeek {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    width: 32px;
+    height: 32px;
+    transform: translateX(-50%);
+    background: $linear-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}

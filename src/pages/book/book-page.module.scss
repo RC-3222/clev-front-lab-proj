@@ -1,0 +1,9 @@
+@use "../../scss/variables" as *;
+
+.bookPage {
+  flex: 1;
+
+  .breadcrumbsWrapper {
+    background-color: $clr-grey--10;
+  }
+}

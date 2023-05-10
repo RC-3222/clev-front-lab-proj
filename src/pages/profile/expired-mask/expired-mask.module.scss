@@ -1,0 +1,41 @@
+@use "../../../scss/variables" as *;
+
+.wrapper {
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 94px);
+  background: rgba(255, 82, 83, 0.7);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  padding: 16px 24px;
+  color: $clr-white;
+  letter-spacing: 0.1px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  z-index: 3;
+
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    max-width: 436px;
+  }
+
+  .subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+  }
+}
+
+@media (max-width: 568px) {
+  .wrapper {
+    .title {
+      font-size: 18px;
+      line-height: 156%;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+@use '../../../../scss/variables' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 32px;
+  margin-bottom: 22px;
+
+  position: relative;
+
+  .titleBlock {
+    display: flex;
+    align-items: center;
+
+    .logoWrapper {
+      margin-right: 120px;
+
+      @media (max-width: 1150px) {
+        display: none;
+      }
+    }
+
+    .title {
+      font-size: 32px;
+      line-height: 40px;
+
+      @media (max-width: 320px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+
+  .user {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .userName {
+      font-weight: 600;
+      margin-right: 16px;
+    }
+
+    .avatarWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      box-shadow: $box-shadow;
+      transition: $transition--generic;
+      cursor: pointer;
+
+      img {
+        border-radius: 50%;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: $box-shadow--hover;
+      }
+    }
+
+    .userMenu {
+      position: absolute;
+      width: 240px;
+      justify-content: end;
+      top: 58px;
+      right: 0;
+      padding: 28px 20px;
+      background-color: $clr-white;
+      z-index: 1001;
+      box-shadow: $box-shadow;
+      border-radius: 10px;
+
+      display: none;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        li {
+          cursor: pointer;
+          font-weight: 700;
+          font-size: 18px;
+          margin-top: 42px;
+          transition: $transition--generic;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:hover {
+            color: $clr-orange;
+          }
+        }
+      }
+    }
+
+    &:hover .userMenu {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+

@@ -1,0 +1,69 @@
+@use "../../../scss/variables" as *;
+
+.btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  transition: $transition--generic;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: $linear-gradient;
+  }
+
+  &.large {
+    height: 52px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 30px;
+  }
+
+  &.small {
+    height: 40px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &.primary {
+    border: 1px solid transparent;
+    background: $linear-gradient;
+    color: $clr-white;
+
+    &:hover {
+      border: 1px solid $clr-orange;
+    }
+
+    &:disabled {
+      background: $clr-grey--20 none;
+      border: 1px solid transparent;
+      color: $clr-white;
+      cursor: default;
+    }
+  }
+
+  &.secondary {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid $clr-grey--30;
+    color: $clr-black--10;
+
+    &:hover {
+      border: 1px solid $clr-grey--30;
+    }
+
+    &:disabled {
+      background: $clr-grey--10 none;
+      border: 1px solid $clr-grey--30;
+      color: $clr-grey--40;
+      cursor: default;
+    }
+  }
+}

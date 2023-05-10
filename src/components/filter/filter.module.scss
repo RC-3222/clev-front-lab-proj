@@ -1,0 +1,40 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 24px;
+
+  .sorting {
+    display: flex;
+
+    .blockDesktop {
+      display: flex;
+      @media (max-width: 580px) {
+        display: none;
+      }
+    }
+
+    .blockMobile {
+      display: none;
+      //background-color: red;
+      @media (max-width: 580px) {
+        display: flex;
+      }
+
+      button {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .listType {
+    button {
+      display: inline-block;
+      margin-left: 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

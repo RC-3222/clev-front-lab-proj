@@ -1,0 +1,47 @@
+.termsPage {
+  display: flex;
+  flex: 1;
+
+  .content {
+    margin: 35px 0 62px 30px;
+
+    @media (max-width: 560px) {
+      margin: 35px 0 10px 0;
+    }
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+
+
+  ol {
+    list-style: none;
+    counter-reset: li;
+
+    li {
+      margin: 16px 0 16px 20px;
+      font-weight: 400;
+      font-size: 16px;
+
+      &:before {
+        counter-increment: li;
+        content: counters(li, '.') '. ';
+      }
+    }
+  }
+
+  .rootList {
+    margin-left: -20px;
+
+    &__item {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      margin-bottom: 32px;
+    }
+  }
+}

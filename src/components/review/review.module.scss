@@ -1,0 +1,45 @@
+@use "../../scss/variables" as *;
+
+.review {
+  .userData {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .imgWrapper {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 24px;
+    }
+
+    .userDateBlock {
+      @media (max-width: 485px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      span {
+        color: $clr-grey-50;
+        margin-right: 24px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .userText {
+    margin-top: 16px;
+    margin-bottom: 42px;
+    max-width: 730px;
+    font-size: 16px;
+    line-height: 24px;
+    @media (max-width: 485px) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}

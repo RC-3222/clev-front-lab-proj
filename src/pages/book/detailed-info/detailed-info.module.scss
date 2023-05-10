@@ -1,0 +1,73 @@
+@use "../../../scss/variables" as *;
+
+.detailedInformation {
+  margin-bottom: 62px;
+
+  .infoList {
+    grid-template-rows: repeat(5, 20px);
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: column;
+    grid-gap: 11px;
+    display: grid;
+    margin-bottom: 20px;
+
+    @media (max-width: 720px) {
+      display: block;
+    }
+
+    .infoItem {
+      display: flex;
+
+      @media (max-width: 720px) {
+        margin-bottom: 16px;
+      }
+
+      .typeInfo {
+        width: 35%;
+        color: $clr-grey--30;
+        font-weight: 600;
+        margin-right: 10px;
+
+        @media (max-width: 720px) {
+          width: 40%;
+        }
+
+        @media (max-width: 500px) {
+          width: 50%;
+        }
+      }
+
+      .valueInfo {
+        width: 65%;
+        @media (max-width: 720px) {
+          width: 60%;
+        }
+        @media (max-width: 720px) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.subTitle {
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    max-width: 350px;
+    width: 100%;
+    border-bottom: 1px solid $clr-grey--20;
+  }
+
+  @media (max-width: 400px) {
+    margin-bottom: 24px;
+  }
+}

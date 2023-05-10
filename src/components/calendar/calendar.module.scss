@@ -1,0 +1,97 @@
+@use "../../scss/variables" as *;
+
+.calendarWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 340px) {
+    width: min(288px, 100%);
+  }
+
+  .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    width: 180px;
+    margin-bottom: 32px;
+  }
+
+  .closeIcon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
+    @media (max-width: 560px) {
+      top: -10px;
+      right: 0;
+    }
+  }
+
+  .calendar {
+    box-shadow: $box-shadow;
+    margin-bottom: 32px;
+    min-height: 256px;
+    width: 240px;
+    border-radius: 8px;
+
+    // overflow: hidden;
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 45px;
+      margin-top: 25px;
+      padding: 0 22px;
+
+      .selectMonthGroup {
+        color: $clr-grey--40;
+        display: flex;
+        position: relative;
+
+        img {
+          height: 16px;
+          width: 16px;
+          cursor: pointer;
+          margin-left: 11px;
+          scale: 1.5;
+        }
+
+        &.active {
+          img {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .changeMonthGroup {
+        display: flex;
+
+        img {
+          cursor: pointer;
+          margin-left: 12px;
+        }
+      }
+    }
+
+    .daysList {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(7, minmax(32px, 1fr));
+      padding: 0 16px;
+    }
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}

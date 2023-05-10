@@ -1,0 +1,14 @@
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 190px);
+  gap: 21.5px 32px;
+  justify-content: center;
+
+  &Line {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 405px) {
+    grid-template-columns: none;
+  }
+}

@@ -1,0 +1,26 @@
+@use "../../../scss/variables" as *;
+
+.navMobile {
+  position: absolute;
+  top: 90px;
+  left: -550px;
+  width: 502px;
+  max-height: 74vh;
+  overflow: auto;
+  margin-right: 10px;
+  background-color: $clr-grey--10;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  z-index: 2000;
+  transition: all 0.2s linear;
+
+  &.active {
+    left: 60px;
+    @media (max-width: 635px) {
+      left: 0;
+      width: 94%;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  }
+}

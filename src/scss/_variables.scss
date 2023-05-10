@@ -1,0 +1,35 @@
+// regular colors
+$clr-black--10: #363636;
+$clr-black--20: #3636364d;
+
+$clr-grey--10: #f9f9fa;
+$clr-grey--20: #ebebeb;
+$clr-grey--30: #bfc4c9; // 191 196 201
+$clr-grey--40: #a7a7a7; // 167 167 167
+$clr-grey-50: #727272;
+
+$clr-white: #ffffff;
+$clr-orange: #ff740f;
+// context colors
+$clr-accent: #ff5253;
+$clr-warning: #ffbc1f;
+$clr-pos: #00ca71;
+$clr-neg: #f42c4f;
+
+$clr-bg-pos: #ebf9f1;
+$clr-bg-neg: #feebea;
+
+// "special" colors
+$highlight: rgb(255, 82, 83);
+
+$caret: rgb(248, 54, 0);
+
+// other
+$box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+0px 1px 5px rgba(191, 196, 201, 0.24);
+$box-shadow--hover: 0px 2px 5px rgba(54, 54, 54, 0.1);
+
+$linear-gradient: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+
+$transition--generic: all 0.25s linear;
+

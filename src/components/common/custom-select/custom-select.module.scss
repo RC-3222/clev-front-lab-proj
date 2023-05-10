@@ -1,0 +1,28 @@
+@use "../../../scss/variables" as *;
+
+.select {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  box-shadow: $box-shadow;
+  border-radius: 20px;
+  min-width: 150px;
+  padding: 11px 16px;
+  border: none;
+  background-color: inherit;
+  color: $clr-grey--30;
+  cursor: pointer;
+
+  .imgWrapper {
+    display: flex;
+    align-items: center;
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 5px;
+
+  }
+}
+
+.reversed {
+  transform: rotate(180deg);
+}

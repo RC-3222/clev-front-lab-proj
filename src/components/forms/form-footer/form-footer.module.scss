@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+
+  @media (max-width: 420px) {
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 7px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #727272;
+
+  @media (max-width: 420px) {
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #363636;
+
+  span {
+    line-height: 100%;
+  }
+
+  svg {
+    transition: color 0.2s linear;
+  }
+
+  &:hover svg {
+    color: #363636;
+  }
+}

@@ -1,0 +1,105 @@
+@use "../../scss/variables" as *;
+
+.reviews {
+  margin-top: 62px;
+
+  .btnWrapper {
+    width: 350px;
+    margin-bottom: 42px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      margin-bottom: 20px;
+
+      button {
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .subTitle {
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+
+    .amountReviews {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $clr-grey--30;
+      margin-left: 8px;
+    }
+
+    .chevronBtn {
+      transition: $transition--generic;
+      margin-left: 30px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &.active {
+        rotate: 180deg;
+      }
+    }
+
+    .chevronBtn {
+      transition: $transition--generic;
+      margin-left: 30px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &.active {
+        rotate: 180deg;
+      }
+    }
+
+    .amountReviews {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $clr-grey--30;
+      margin-left: 8px;
+    }
+
+    &.withUnderline::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      max-width: 350px;
+      width: 100%;
+      border-bottom: 1px solid $clr-grey--20;
+    }
+
+    @media (max-width: 400px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .reviewsList {
+    opacity: 0;
+    transition: $transition--generic;
+    height: 0;
+
+    &.active {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+}

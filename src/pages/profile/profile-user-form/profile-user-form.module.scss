@@ -1,0 +1,86 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  .titleWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    .title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.25;
+      letter-spacing: 0.1px;
+    }
+  }
+
+  .infoTable {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 36px;
+    column-gap: 30px;
+
+    .tableItem {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+  }
+
+  .buttonBlock {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    .button {
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.2px;
+      max-width: 256px;
+      width: 100%;
+      border-radius: 30px;
+      padding: 14px;
+      height: unset;
+      cursor: pointer;
+
+      &:disabled {
+        border: unset;
+        background-color: #ebebeb;
+        color: #ffffff;
+      }
+
+      &:not(:disabled):hover {
+        scale: 1.015;
+      }
+
+      &.edit {
+        background-color: rgba(0, 0, 0, 0)
+      }
+    }
+
+  }
+
+  @media (max-width: 568px) {
+    .infoTable {
+      grid-template-columns: 1fr;
+      row-gap: 32px;
+    }
+    .buttonBlock {
+      flex-direction: column;
+      row-gap: 16px;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      width: 100%;
+
+      .button {
+        max-width: unset;
+      }
+    }
+  }
+}
+

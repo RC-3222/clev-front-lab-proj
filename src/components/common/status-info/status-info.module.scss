@@ -1,0 +1,50 @@
+.container {
+  padding: 48px 32px;
+  width: 600px;
+  text-align: center;
+
+  @media (max-width: 665px) {
+    padding: 42px 16px 32px;
+    width: auto;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  color: #363636;
+
+
+  @media (max-width: 550px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 32px 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 550px) {
+    margin: 24px 0;
+  }
+}
+
+.button {
+  border-radius: 20px;
+  width: 100%;
+
+  @media (min-width: 550px) {
+    font-size: 16px;
+    line-height: 150%;
+    height: 52px;
+    border-radius: 30px;
+  }
+}

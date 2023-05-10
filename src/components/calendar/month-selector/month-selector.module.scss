@@ -1,0 +1,44 @@
+@use "../../../scss/variables" as *;
+
+.monthList {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  color: $clr-black--10;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+
+  position: absolute;
+  top: 28px;
+  left: 0;
+  z-index: 3000;
+
+  padding: 16px;
+
+  width: 200px;
+  max-height: 120px;
+
+  li {
+    flex: 1;
+    list-style: none;
+
+    text-align: center;
+
+    width: 100%;
+    padding: 4px;
+
+    cursor: pointer;
+
+    border-bottom: 2px solid currentColor;
+
+    transition: $transition--generic;
+
+    &:hover {
+      color: $clr-orange;
+    }
+  }
+}

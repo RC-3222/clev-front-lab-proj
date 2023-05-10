@@ -1,0 +1,47 @@
+@use "../../../scss/variables" as *;
+
+.toast {
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  width: 100%;
+  padding: 24px 32px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: 600;
+
+  &.positive {
+    border: 2px solid $clr-pos;
+    background-color: $clr-bg-pos;
+  }
+
+  &.negative {
+    border: 2px solid $clr-neg;
+    background-color: $clr-bg-neg;
+  }
+
+  .message {
+    display: flex;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 28px;
+    }
+  }
+
+  .closeIcon {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}

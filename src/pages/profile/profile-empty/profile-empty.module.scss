@@ -1,0 +1,21 @@
+@use "../../../scss/variables" as *;
+
+.data {
+  background-color: #6e76f1;
+  opacity: 0.7;
+  border-radius: 10px;
+  max-width: 1110px;
+  width: 100%;
+  min-height: 218px;
+  height: 100%;
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.1px;
+  color: $clr-white;
+
+  .text {
+    max-width: 394px;
+  }
+}

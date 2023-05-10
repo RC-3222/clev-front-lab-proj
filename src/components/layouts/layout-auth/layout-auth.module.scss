@@ -1,0 +1,43 @@
+@use "../../../scss/variables" as *;
+
+.layoutAuthentication {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+
+  background: $linear-gradient;
+
+  .content {
+    position: relative;
+  }
+
+  .childrenContainer {
+    position: relative;
+    background: $clr-white;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: white;
+
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+      line-height: 28px;
+
+      top: 30px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@use "../../../scss/variables" as *;
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 38px;
+  box-shadow: $box-shadow;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-right: 20px;
+
+  @media (max-width: 768px) {
+    width: 270px;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .searchIcon {
+    display: flex;
+    align-items: center;
+    min-width: 16px;
+    min-height: 16px;
+    margin-right: 8px;
+  }
+
+  .searchIcon * {
+    color: $clr-grey--30;
+    fill: $clr-grey--30;
+    transition: $transition--generic;
+  }
+
+  .searchIconColor * {
+    color: $clr-orange;
+    fill: $clr-orange;
+  }
+
+  .closeIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .closeIcon * {
+    color: transparent;
+    fill: transparent;
+    transition: $transition--generic;
+  }
+
+  .closeIconColor * {
+    color: $clr-orange;
+    fill: $clr-orange;
+  }
+
+  .searchInput {
+    border: none;
+    height: 100%;
+    outline: none;
+    width: 100%;
+    caret-color: $caret;
+
+    &.normal {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &.small {
+      font-size: 12px;
+    }
+
+    &::placeholder {
+      color: $clr-grey--30;
+    }
+  }
+}
+
+.small {
+  height: 32px;
+}

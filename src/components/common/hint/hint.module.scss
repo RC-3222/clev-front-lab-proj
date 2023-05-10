@@ -1,0 +1,28 @@
+@use "../../../scss/variables" as *;
+
+.hint {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+
+  a {
+    transition: $transition--generic;
+  }
+}
+
+.grey {
+  color: #a7a7a7;
+
+  a:hover {
+    color: #363636;
+  }
+}
+
+.error {
+  color: $clr-neg;
+}
+
+.black {
+  color: #363636;
+}

@@ -1,0 +1,13 @@
+@use "../../../scss/variables" as *;
+
+.modal {
+  width: 528px;
+  padding: 48px 56px;
+  border-radius: 16px;
+  background-color: $clr-white;
+  position: relative;
+
+  @media (max-width: 560px) {
+    padding: 24px 16px;
+  }
+}

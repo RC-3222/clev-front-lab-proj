@@ -1,0 +1,247 @@
+@use '../../scss/variables' as *;
+
+li {
+  list-style: none;
+}
+
+.card {
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  display: flex;
+  animation: showCardAnim 0.25s ease;
+  cursor: pointer;
+
+  .imgWrapper {
+    display: block;
+    border: 1px solid $clr-grey--30;
+    border-radius: 10px;
+    width: 174px;
+    height: 242px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .noImg {
+    background-color: $clr-grey--10;
+    background-image: url('../../assets/images/cat.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &.gridMode {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 8px 16px;
+
+    .imgWrapper {
+      @media (max-width: 420px) {
+        margin: 0 auto 10px;
+      }
+    }
+
+    .noImg {
+      width: 174px;
+      height: 242px;
+    }
+
+    .cardContent {
+      display: grid;
+
+      .ratingWrap {
+        grid-row-end: 1;
+      }
+
+      .noRating {
+        color: $clr-grey-50;
+        grid-row-end: 1;
+        margin-bottom: 6px;
+      }
+
+      .nameWrap {
+        display: flex;
+        margin-top: 19px;
+        align-items: center;
+        height: 54px;
+      }
+
+      .name {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        font-weight: 600;
+        line-height: 18px;
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        overflow: hidden;
+        color: $clr-grey-50;
+      }
+
+      .btnWrap {
+        margin-top: 19px;
+        padding: 0 4px;
+      }
+    }
+  }
+
+  &.listMode {
+    padding: 16px 24px 16px 16px;
+
+    @media (max-width: 575px) {
+      padding: 16px 8px 16px 8px;
+    }
+
+    .imgWrapper {
+      margin-right: 16px;
+      width: 120px;
+      height: 170px;
+
+      @media (max-width: 800px) {
+        height: 172px;
+      }
+      @media (max-width: 575px) {
+        width: 70px;
+        height: 100px;
+      }
+    }
+
+    .noImg {
+      width: 120px;
+      height: 170px;
+
+      @media (max-width: 800px) {
+        height: 172px;
+      }
+
+      @media (max-width: 575px) {
+        width: 70px;
+        height: 100px;
+      }
+    }
+
+    .cardContent {
+      display: grid;
+      width: 100%;
+
+      .nameWrap {
+        grid-column: 1/3;
+
+        .name {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 32px;
+          margin-bottom: 8px;
+          grid-column: 1/3;
+
+          @media (max-width: 575px) {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+          }
+        }
+      }
+
+      .timedOut {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: 0.1px;
+        text-transform: uppercase;
+        color: #ff5253;
+        grid-row-start: 3;
+        margin-left: auto;
+
+        @media (max-width: 800px) {
+          margin-top: 16px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 125%;
+          letter-spacing: 0.2px;
+        }
+      }
+
+      .author {
+        font-size: 16px;
+        grid-row-start: 2;
+        color: $clr-grey-50;
+
+        @media (max-width: 575px) {
+          font-size: 12px;
+          line-height: 18px;
+          margin-bottom: 0;
+        }
+      }
+
+      .btnWrap {
+        grid-row-start: 3;
+        margin-left: auto;
+        width: 186px;
+        display: flex;
+        align-items: center;
+      }
+
+      .ratingWrap {
+        grid-row-start: 3;
+        display: flex;
+        align-items: center;
+      }
+
+      .noRating {
+        color: $clr-grey-50;
+        grid-row-start: 3;
+        display: flex;
+        align-items: center;
+        margin: 8px 0;
+      }
+
+      @media (max-width: 500px) {
+        .nameWrap {
+          grid-column: 1;
+        }
+
+        .btnWrap {
+          grid-row-start: 4;
+          margin-left: 0;
+        }
+
+        .ratingWrap {
+          grid-row-start: 3;
+          margin-top: 5px;
+          margin-bottom: 16px;
+        }
+
+        .noRating {
+          grid-row-start: 3;
+        }
+      }
+
+      @media (max-width: 310px) {
+        .btnWrap {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes showCardAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

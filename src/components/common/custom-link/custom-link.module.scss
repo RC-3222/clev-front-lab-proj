@@ -1,0 +1,49 @@
+@use "../../../scss/variables" as *;
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  font-weight: 600;
+  font-size: 12px;
+  height: 24px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+
+  &.dark {
+    color: #363636;
+  }
+
+  &.light {
+    color: #727272;
+  }
+
+  span {
+    line-height: 100%;
+  }
+
+  svg.left {
+    transform: rotate(180deg);
+  }
+
+  svg {
+    color: #bfc4c9;
+    transition: $transition--generic;
+  }
+
+  &:hover svg {
+    color: #363636;
+  }
+
+  &:active {
+    background-color: #f83600;
+    background-image: $linear-gradient;
+    background-clip: inherit;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  &:active svg path {
+    stroke: url(#gradient);
+  }
+}

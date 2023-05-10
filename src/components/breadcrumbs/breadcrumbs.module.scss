@@ -1,0 +1,21 @@
+@use "../../scss/variables" as *;
+
+.breadcrumbs {
+  color: $clr-grey--30;
+  line-height: 18px;
+  padding: 20px 0;
+
+  a {
+    margin: 0 10px;
+  }
+
+  a:first-child {
+    display: inline-flex;
+    margin-left: 0;
+  }
+
+  a:last-child {
+    cursor: default;
+    margin-right: 0;
+  }
+}
