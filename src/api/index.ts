@@ -15,7 +15,7 @@ export enum ApiPath {
   upload = '/api/upload',
 }
 
-export const BASE_URL = 'https://strapi.cleverland.by';
+export const BASE_URL = 'https://library-cleverland-2jfze.ondigitalocean.app/';
 
 export const axiosInstance = axios.create({
   withCredentials: true,

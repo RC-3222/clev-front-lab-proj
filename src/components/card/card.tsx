@@ -117,7 +117,7 @@ export const Card = memo(
           )}
         >
           <div className={classNames(styles.imgWrapper, { [styles.noImg]: !image })}>
-            {image && <img src={`${BASE_URL}${image.url}`} alt={title} />}
+            {image && <img src={`${image.url}`} alt={title} />}
           </div>
           <div className={styles.cardContent}>
             <div className={styles.nameWrap}>

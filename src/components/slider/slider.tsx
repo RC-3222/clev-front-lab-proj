@@ -30,7 +30,7 @@ export const Slider = ({ images }: SliderProps) => {
         'one-image': images?.length === 1,
       })}
     >
-      {images?.length === 1 && <img src={`${BASE_URL}${images[0].url}`} alt='img' />}
+      {images?.length === 1 && <img src={`${images[0].url}`} alt='img' />}
       {images?.length > 1 && (
         <Fragment>
           <Swiper
@@ -47,7 +47,7 @@ export const Slider = ({ images }: SliderProps) => {
           >
             {images.map(image => (
               <SwiperSlide key={image.url}>
-                <img src={`${BASE_URL}${image.url}`} alt='img' />
+                <img src={`${image.url}`} alt='img' />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -62,7 +62,7 @@ export const Slider = ({ images }: SliderProps) => {
           >
             {images.map(image => (
               <SwiperSlide key={image.url} data-test-id={DataTestId.slideMini}>
-                <img src={`${BASE_URL}${image.url}`} alt='img' />
+                <img src={`${image.url}`} alt='img' />
               </SwiperSlide>
             ))}
           </Swiper>

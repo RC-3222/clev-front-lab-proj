@@ -47,7 +47,7 @@ export const ProfileHeader = ({ userFirstName, userLastName, id, avatar }: Profi
 
     if (data.picture.length > 0) convert(data.picture[0]);
   };
-
+  
   return (
     <div className={styles.wrapper} data-test-id={DataTestId.profileAvatar}>
       <form className={styles.avatarMask} onChange={handleSubmit(onSubmit)}>
@@ -57,7 +57,7 @@ export const ProfileHeader = ({ userFirstName, userLastName, id, avatar }: Profi
         </label>
         <img
           className={styles.avatar}
-          src={avatar ? `${BASE_URL}${avatar}` : imgFile}
+          src={avatar ? `${avatar}` : imgFile}
           alt='profile-avatar'
         />
       </form>
