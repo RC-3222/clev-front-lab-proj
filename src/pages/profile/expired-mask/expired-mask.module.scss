@@ -19,14 +19,14 @@
 
   .title {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 125%;
     max-width: 436px;
   }
 
   .subtitle {
     font-weight: 600;
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 129%;
   }
 }
@@ -34,7 +34,7 @@
 @media (max-width: 568px) {
   .wrapper {
     .title {
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 156%;
     }
   }

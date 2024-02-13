@@ -20,7 +20,7 @@
     border: 1px solid transparent;
     max-width: 255px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 42px;
     transition: $transition--generic;
     display: flex;
@@ -76,20 +76,20 @@
 
       .genreLink {
         transition: $transition--generic;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         text-transform: none;
         margin-bottom: 10px;
-        line-height: 28px;
+        line-height: 1.75rem;
 
         &:hover {
           color: $clr-accent;
         }
 
         &.activeGenreLink {
-          font-size: 18px;
+          font-size: 1.125rem;
           font-weight: 700;
-          line-height: 28px;
+          line-height: 1.75rem;
           background: $linear-gradient;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -99,10 +99,10 @@
         .quantity {
           margin-left: 6px;
           color: $clr-grey--30;
-          line-height: 24px;
+          line-height: 1.5rem;
           cursor: default;
           font-weight: 400;
-          font-size: 14px;
+          font-size: .875rem;
           -webkit-text-fill-color: $clr-grey--30;
           background-clip: unset;
         }

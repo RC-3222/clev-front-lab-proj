@@ -23,8 +23,8 @@
   .title {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
 
     color: white;
 
@@ -34,8 +34,8 @@
     transform: translateX(-50%);
 
     @media (max-width: 500px) {
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
 
       top: 30px;
     }

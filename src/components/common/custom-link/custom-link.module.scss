@@ -5,17 +5,17 @@
   align-items: center;
   gap: 0 15px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: .75rem;
   height: 24px;
   letter-spacing: 0.2px;
   text-transform: uppercase;
 
   &.dark {
-    color: #363636;
+    color: $clr-black--10;
   }
 
   &.light {
-    color: #727272;
+    color: $clr-grey-50;
   }
 
   span {
@@ -32,7 +32,7 @@
   }
 
   &:hover svg {
-    color: #363636;
+    color: $clr-black--10;
   }
 
   &:active {

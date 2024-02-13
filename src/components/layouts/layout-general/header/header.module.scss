@@ -23,12 +23,12 @@
     }
 
     .title {
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 2rem;
+      line-height: 2.5rem;
 
       @media (max-width: 320px) {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
       }
     }
   }
@@ -90,7 +90,7 @@
         li {
           cursor: pointer;
           font-weight: 700;
-          font-size: 18px;
+          font-size: 1.125rem;
           margin-top: 42px;
           transition: $transition--generic;
 

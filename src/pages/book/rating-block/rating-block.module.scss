@@ -9,12 +9,12 @@
 
     span {
       font-weight: 700;
-      font-size: 18px;
+      font-size: 1.125rem;
       margin-left: 10px;
     }
 
     .noRating {
-      font-size: 14px;
+      font-size: .875rem;
       font-weight: 400;
     }
   }
@@ -26,9 +26,9 @@
 
 .subTitle {
   margin-bottom: 32px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
   position: relative;
 
   &::after {

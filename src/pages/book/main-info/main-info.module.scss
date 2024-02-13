@@ -22,13 +22,13 @@
 
     .title {
       font-weight: 700;
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 2rem;
+      line-height: 2.5rem;
       margin-bottom: 24px;
 
       @media (max-width: 768px) {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
       }
 
       @media (max-width: 500px) {
@@ -36,26 +36,26 @@
       }
 
       @media (max-width: 360px) {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
       }
     }
 
     .author {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 700;
-      line-height: 28px;
+      line-height: 1.75rem;
       color: $clr-grey--30;
       margin-bottom: 32px;
 
       @media (max-width: 768px) {
-        font-size: 14px;
+        font-size: .875rem;
         font-weight: 600;
-        line-height: 18px;
+        line-height: 1.125rem;
       }
 
       @media (max-width: 500px) {
-        font-size: 12px;
+        font-size: .75rem;
         font-weight: 400;
       }
     }
@@ -74,8 +74,8 @@
         margin-bottom: 42px;
         button {
           height: 40px;
-          font-size: 12px;
-          line-height: 18px;
+          font-size: .75rem;
+          line-height: 1.125rem;
           border-radius: 20px;
         }
       }
@@ -84,8 +84,8 @@
     .aboutBookFullScreen {
       p {
         margin-bottom: 32px;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
       }
 
       @media (max-width: 768px) {
@@ -101,12 +101,12 @@
 
   p {
     margin-bottom: 32px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 
     @media (max-width: 400px) {
-      font-size: 12px;
-      line-height: 18px;
+      font-size: .75rem;
+      line-height: 1.125rem;
       margin-bottom: 0;
     }
   }
@@ -118,9 +118,9 @@
 
 .subTitle {
   margin-bottom: 32px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
   position: relative;
 
   &::after {

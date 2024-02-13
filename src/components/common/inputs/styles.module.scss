@@ -24,10 +24,10 @@
   margin: 0;
   text-overflow: ellipsis;
   padding: 26px 40px 12px 12px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: .875rem;
+  line-height: 1.125rem;
   letter-spacing: 0.1px;
-  color: #363636;
+  color: $clr-black--10;
   border-bottom: 1px solid #bfc4c9;
 
   &.error {
@@ -60,15 +60,15 @@ input.password {
   transform: translateY(-50%);
   transition: $transition--generic;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: .75rem;
+  line-height: 1rem;
   letter-spacing: 0.1px;
-  color: #363636;
+  color: $clr-black--10;
 
   &.filled {
     font-weight: 500;
-    line-height: 16px;
-    color: #a7a7a7;
+    line-height: 1rem;
+    color: $clr-grey--40;
     letter-spacing: 0.2px;
     top: 6px;
     transform: translateY(0);

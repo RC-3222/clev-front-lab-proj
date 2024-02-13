@@ -63,12 +63,12 @@
     caret-color: $caret;
 
     &.normal {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: .875rem;
+      line-height: 1.125rem;
     }
 
     &.small {
-      font-size: 12px;
+      font-size: .75rem;
     }
 
     &::placeholder {

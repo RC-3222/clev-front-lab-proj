@@ -17,15 +17,15 @@
   .notFound {
     text-align: center;
     margin-top: 200px;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     color: $clr-grey--30;
-    line-height: 40px;
+    line-height: 2.5rem;
 
     @media (max-width: 370px) {
       margin-top: 134px;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
     }
   }
 }

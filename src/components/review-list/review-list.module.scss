@@ -16,8 +16,8 @@
 
       button {
         height: 40px;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: .75rem;
+        line-height: 1.125rem;
         border-radius: 20px;
       }
     }
@@ -25,13 +25,13 @@
 
   .subTitle {
     margin-bottom: 32px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     position: relative;
 
     .amountReviews {
-      font-size: 14px;
-      line-height: 24px;
+      font-size: .875rem;
+      line-height: 1.5rem;
       font-weight: 400;
       color: $clr-grey--30;
       margin-left: 8px;
@@ -70,8 +70,8 @@
     }
 
     .amountReviews {
-      font-size: 14px;
-      line-height: 24px;
+      font-size: .875rem;
+      line-height: 1.5rem;
       font-weight: 400;
       color: $clr-grey--30;
       margin-left: 8px;

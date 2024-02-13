@@ -10,17 +10,17 @@
 
   .title {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 125%;
     letter-spacing: 0.1px;
   }
 
   .subtitle {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 150%;
     letter-spacing: 0.1px;
-    color: #a7a7a7;
+    color: $clr-grey--40;
     margin-bottom: 24px;
   }
 }
